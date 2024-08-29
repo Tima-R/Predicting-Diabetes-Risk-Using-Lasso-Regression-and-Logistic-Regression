@@ -18,6 +18,18 @@ The boxplot shows that individuals with diabetes generally have higher glucose l
 
 The overlap in glucose levels between diabetic and non-diabetic individuals indicates that glucose alone isn't a definitive predictor of diabetes. This suggests the need for a multivariate approach, incorporating other factors like BMI, age, and insulin levels, to improve prediction accuracy and reduce potential misclassification.
 
+# 4. Model Selection: Logistic Regression
+Logistic regression was chosen for its simplicity, interpretability, and effectiveness in handling binary classification tasks, making it ideal for predicting the presence or absence of diabetes in this dataset.
+
+![Logistic Regression](https://github.com/user-attachments/assets/cd377411-3c4a-4741-b57f-b352f0510a9c)
+
+The logistic regression analysis results show:
+
+Significant Predictors: Glucose level and pedigree function are significant predictors of the outcome variable. Glucose level has a very strong effect (p < 0.001), and pedigree function is also significant (p < 0.01). Marginally Significant Predictors: BMI and age are marginally significant, with p-values close to 0.05. Insignificant Predictors: Blood pressure and skin thickness do not significantly predict the outcome (p > 0.05). Model Fit: The model improves the fit compared to a baseline model with no predictors, as indicated by a decrease in deviance from the null model to the residual model. The AIC value is 194.39, which is used for model comparison. In summary, glucose level and pedigree function are key predictors, while BMI and age show some potential, and blood pressure and skin thickness do not significantly impact the outcome.
+
+
+
+
 
 
 
